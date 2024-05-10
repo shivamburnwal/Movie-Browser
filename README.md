@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Your Movie Browser App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Your Movie Browser App! This project is a web application built with React, providing users with the ability to search for movies, explore details about them, and more. Whether you're a casual moviegoer or a cinephile, this app caters to all.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search Movies:** Utilize the search bar to query movies by title.
+- **Movie Details:** Access in-depth information about each movie, encompassing its title, release date, genre, overview, rating, and more.
+- **Responsive Design:** Experience seamless functionality across diverse devices, ensuring an optimal user experience on both desktop and mobile platforms.
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Home Page](/screenshots/homePage.png)
 
-### `npm test`
+The Home page serves as the entry point, providing an introductory overview of the app's capabilities and prompting users to commence their movie searches.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Search Results
 
-### `npm run build`
+![Search Results](/screenshots/searchPage.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Upon entering a movie title in the search bar, the app dynamically retrieves and displays relevant search results, facilitating efficient movie discovery.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Movie Details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Movie Details](/screenshots/movieDetailsPage.png)
 
-### `npm run eject`
+For each movie, users can delve into comprehensive details, encompassing essential attributes such as title, release date, genre, overview, rating, and more, fostering a deeper understanding of their favorite films.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### About Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![About Page](/screenshots/aboutPage.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Welcome to the About page! Here, you can learn more about the Your Movie Browser App project and the team behind it. Gain insights into the motivation behind creating this app, the technologies used, and our vision for the future. Whether you're a curious user or a potential collaborator, we invite you to explore this page and get to know us better.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
 
-## Learn More
+To initiate the app:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone this repository to your local machine.
+2. Navigate to the project directory using your terminal.
+3. Depending on your package manager, follow the appropriate steps below:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Using Yarn
 
-### Code Splitting
+```bash
+# Install dependencies
+yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Launch the app in development mode
+yarn start
+```
 
-### Analyzing the Bundle Size
+#### Using NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# Install dependencies
+npm install
 
-### Making a Progressive Web App
+# Launch the app in development mode
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Access [http://localhost:3000](http://localhost:3000) in your preferred web browser to explore the app's functionality.
 
-### Advanced Configuration
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+We value feedback and contributions! Should you have any suggestions or encounter any issues while utilizing the app, kindly [raise an issue](https://github.com/your-username/your-movie-browser-app/issues) on GitHub.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy movie browsing!

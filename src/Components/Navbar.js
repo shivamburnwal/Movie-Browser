@@ -54,7 +54,7 @@ const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
     if (!searchText.trim()) {
       navigate("/");
     }
-  }, [searchText, navigate]);
+  }, [searchText]);
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">

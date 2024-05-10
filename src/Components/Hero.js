@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Hero = ({ text, backgroundImage, children }) => {
   const [containerHeight, setContainerHeight] = useState(0);
-  const maxHeight = '90vh';
+  const maxHeight = '88vh';
   const minHeight = 70;
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const Hero = ({ text, backgroundImage, children }) => {
   };
 
   return (
-    <div className="hero-container" style={backgroundStyle}>
+    <div className="hero-container mt-3" style={backgroundStyle}>
       {backgroundImage && <div style={overlayStyle}></div>}
       <div className="hero-content" style={contentStyle}>
         {!backgroundImage && (

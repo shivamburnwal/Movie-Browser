@@ -1,29 +1,103 @@
-import React from 'react';
-import Hero from './Hero';
+import React from "react";
+import Hero from "./Hero";
 
 const AboutView = () => {
   return (
     <div>
-      <Hero text="What's the Deal with Us?" />
-      <div className="container mt-5">
+      <Hero text="Who's Behind the Magic?" />
+      <div className="container mt-3">
         <div className="row">
           <div className="col-md-8 offset-md-2">
-            <h2 className="text-center mb-4" style={{ fontSize: '2.5rem', fontFamily: 'cursive', color: '#3f51b5' }}>Welcome to Your Movie Wonderland!</h2>
-            <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
-              Ahoy there, fellow movie buff! We're not just another boring movie site; we're your ticket to cinematic paradise! 🎬✨
+            <p style={{ fontSize: "1.2rem", lineHeight: "1.6" }}>
+              I'm Shivam Burnwal, a full-stack developer passionate about movies
+              and technology. Your Movie Wonderland is my brainchild, designed
+              to celebrate the magic of cinema with a user-friendly platform.
             </p>
-            <h3 style={{ fontSize: '1.5rem', fontFamily: 'cursive', color: '#3f51b5' }}>Why We're Cooler Than the Fonz:</h3>
-            <ul style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
-              <li>Our Movie Database is Bigger Than Kanye's Ego</li>
-              <li>We've Got More Movie Info Than a Spy's Dossier</li>
-              <li>Our Interface is as Smooth as a Movie Star's Lines</li>
-              <li>Personalized Recommendations? We've Got Your Back Like a Trusty Sidekick</li>
-              <li>Engaging Movie Details That Even Hitchcock Would Approve Of</li>
-              <li>Our Support Team is So Responsive, They Make Speedy Gonzales Look Like a Sloth</li>
-            </ul>
-            <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
-              Ready to embark on a cinematic adventure like no other? Don your popcorn, grab your beverage of choice, and let's dive into the reel deal together! 🍿🎥
+            <p style={{ fontSize: "1.2rem", lineHeight: "1.6" }}>
+              Curious to know more about me? Feel free to connect with me on{" "}
+              <a
+                href="https://linkedin.com/in/shivamburnwal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>{" "}
+              or check out my{" "}
+              <a
+                href="https://github.com/shivamburnwal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>{" "}
+              profile.
             </p>
+            <h3
+              style={{
+                fontSize: "1.5rem",
+                fontFamily: "cursive",
+                color: "#3f51b5",
+              }}
+            >
+              Technologies Used
+            </h3>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="card mb-3">
+                  <div className="card-body">
+                    <h5 className="card-title">Frontend</h5>
+                    <div className="row">
+                      <div className="col-md-6">
+                        <div className="capsule">React</div>
+                        <div className="capsule">JavaScript (ES6+)</div>
+                        <div className="capsule">HTML5</div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="capsule">CSS3</div>
+                        <div className="capsule">React Router</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="card mb-3">
+                  <div className="card-body">
+                    <h5 className="card-title">Backend</h5>
+                    <div className="capsule">.Net Web API</div>
+                    <div className="capsule">SQL Server</div>
+                    <div className="capsule">RESTful APIs</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3
+              style={{
+                fontSize: "1.5rem",
+                fontFamily: "cursive",
+                color: "#3f51b5",
+              }}
+            >
+              APIs
+            </h3>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="card mb-3">
+                  <div className="card-body">
+                    <h5 className="card-title">External</h5>
+                    <div className="capsule">TMDB API</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="card mb-3">
+                  <div className="card-body">
+                    <h5 className="card-title">Internal</h5>
+                    <div className="capsule">Movie Data Management API</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

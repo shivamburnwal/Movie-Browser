@@ -4,10 +4,11 @@ import Hero from "./Hero";
 const Home = () => {
   return (
     <>
-      <Hero text="Your Movie Search Hub" />
-      <div className="container mt-5">
+      <Hero text="What's the Deal with Us?" />
+      <div className="container mt-4">
         <div className="row">
           <div className="col-md-8 offset-md-2 text-center">
+            <h2 className="text-center mb-2" style={{ fontSize: '2.5rem', fontFamily: 'cursive', color: '#3f51b5' }}>Welcome to Your Movie Wonderland!</h2>
             <p style={{ fontSize: "1.5rem", lineHeight: "1.6" }}>
               Lights, camera, action! 🎬 Welcome to Your Movie Search Hub, where
               the magic of cinema comes to life! Whether you're in the mood for
