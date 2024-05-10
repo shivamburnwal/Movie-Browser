@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Hero = ({ text, backgroundImage, children }) => {
   const [containerHeight, setContainerHeight] = useState(0);
-  const maxHeight = '88vh';
+  const maxHeight = '89vh';
   const minHeight = 70;
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Hero = ({ text, backgroundImage, children }) => {
     left: 0,
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
   };
 
   const backgroundStyle = {

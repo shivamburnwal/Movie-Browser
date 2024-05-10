@@ -19,7 +19,7 @@ const MovieCard = ({movie}) => {
             <img
               src={imageUrl}
               className="card-img-top"
-              alt={movie.original_title}
+              alt={movie.title}
               style={{
                 objectFit: "cover",
                 width: "100%",
@@ -41,7 +41,7 @@ const MovieCard = ({movie}) => {
           )}
         </div>
         <div className="card-body">
-          <h5 className="card-title">{movie.original_title}</h5>
+          <h5 className="card-title">{movie.title}</h5>
           <p
             className="card-text"
             style={{

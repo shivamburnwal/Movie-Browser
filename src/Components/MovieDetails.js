@@ -1,12 +1,17 @@
 import React from "react";
+import placeholderImage from "../Images/fileNotFound.png";
 
 const MovieDetails = ({ movie }) => {
+  const imageUrl = movie.poster_path 
+                  ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+                  : placeholderImage;
+
   return (
     <div className="container mt-5">
       <div className="row">
         <div className="col-md-4">
           <img
-            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            src={imageUrl}
             alt={movie.title}
             className="img-fluid rounded"
             style={{ maxHeight: "500px", width: "auto" }}

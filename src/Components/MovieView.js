@@ -3,11 +3,16 @@ import { useParams } from "react-router-dom";
 import { MovieDetailsApi } from "./Api";
 import MovieDetails from "./MovieDetails";
 import Hero from "./Hero";
+import placeholderImage from "../Images/coffee.webp";
 
 const MovieView = () => {
   const [movieDetails, setMovieDetails] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
+
+  const imageUrl = movieDetails.backdrop_path
+    ? `https://image.tmdb.org/t/p/original/${movieDetails.backdrop_path}`
+    : placeholderImage;
 
   useEffect(() => {
     MovieDetailsApi(id)
@@ -27,7 +32,7 @@ const MovieView = () => {
       ) : (
         <Hero
           text={movieDetails.original_title}
-          backgroundImage={`https://image.tmdb.org/t/p/original/${movieDetails.backdrop_path}`}
+          backgroundImage={imageUrl}
         >
           <MovieDetails movie={movieDetails} />
         </Hero>

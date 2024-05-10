@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import SearchMoviesApi from "./Api";
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 
 /**
  * @param {Object} props
@@ -12,31 +12,8 @@ import React, { useEffect } from "react";
 const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
   const navigate = useNavigate();
 
-  /**
-   * @param {React.KeyboardEvent<HTMLInputElement>} e
-   */
-  const updateSearchText = (e) => {
+  const searchMovies = useCallback(() => {
     navigate("/search");
-    setSearchText(e.target.value);
-  };
-
-  /**
-   * @param {React.KeyboardEvent<HTMLInputElement>} e
-   */
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-    }
-  };
-
-  /**
-   * @param {React.KeyboardEvent<HTMLInputElement>} e
-   */
-  const handleSearchClick = (e) => {
-    e.preventDefault()
-  };
-
-  useEffect(() => {
     if (searchText.trim() !== "") {
       SearchMoviesApi(searchText)
         .then((data) => {
@@ -47,14 +24,41 @@ const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
         });
     } else {
       setSearchResults(() => []);
+      navigate("/");
     }
   }, [searchText, setSearchResults]);
 
+  /**
+   * @param {React.KeyboardEvent<HTMLInputElement>} e
+   */
+  const updateSearchText = (e) => {
+    setSearchText(e.target.value);
+  };
+
+  /**
+   * @param {React.KeyboardEvent<HTMLInputElement>} e
+   */
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      searchMovies();
+    }
+  };
+
+  /**
+   * @param {React.KeyboardEvent<HTMLInputElement>} e
+   */
+  const handleSearchClick = (e) => {
+    e.preventDefault()
+    searchMovies();
+  };
+
   useEffect(() => {
     if (!searchText.trim()) {
+      setSearchResults(() => []);
       navigate("/");
     }
-  }, [searchText]);
+  }, [searchText, setSearchResults]);
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
