@@ -66,6 +66,6 @@ npm start
 
 ## Feedback
 
-We value feedback and contributions! Should you have any suggestions or encounter any issues while utilizing the app, kindly [raise an issue](https://github.com/your-username/your-movie-browser-app/issues) on GitHub.
+Feedback and contributions! Should you have any suggestions or encounter any issues while utilizing the app, kindly [raise an issue](https://github.com/shivamburnwal/Movie-Browser/issues) on GitHub.
 
 Happy movie browsing!
